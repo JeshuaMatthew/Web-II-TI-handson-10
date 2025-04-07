@@ -15,7 +15,7 @@ import {
  
   import { PostService } from './post.service';
   import { ApiParam, ApiQuery } from '@nestjs/swagger';
-import { JwtPayloadDTO } from 'auth/dto/jwt-payload.dto';
+import { JwtPayloadDTO } from 'src/auth/dto/jwt-payload.dto';
 import { posts} from './post.entity';
   
   @Controller('post')

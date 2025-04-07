@@ -5,7 +5,7 @@ import { JwtService } from '@nestjs/jwt';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { AuthGuard } from 'auth/auth.guard';
+import { AuthGuard } from 'src/auth/auth.guard';
 
 @Module({
   imports: [
