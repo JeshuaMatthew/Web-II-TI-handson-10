@@ -6,6 +6,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthModule } from './auth/auth.module';
+import { postmodule } from './post/post.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -28,6 +31,11 @@ import { AuthGuard } from 'src/auth/auth.guard';
         ssl: true,
       }),
     }),
+
+    AuthModule,
+    postmodule,
+    UserModule
+    
   ],
   controllers: [AppController],
   providers: [

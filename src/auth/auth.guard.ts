@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate{
         
         // skip public api
 
-        if(['api/auth/login', 'api/auth/register'].includes(request.url)){
+        if(['/api/auth/login', '/api/auth/register'].includes(request.url)){
             return true;
         }
 
