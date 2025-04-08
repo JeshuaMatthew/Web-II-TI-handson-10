@@ -80,7 +80,7 @@ import { posts} from './post.entity';
         throw new NotFoundException();
       }
 
-      await this.postService
+      await this.postService.deletedById(id);
     }
   }
   
